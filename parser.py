@@ -14,7 +14,7 @@ def parse_arguments():
                         help="margin for the triplet loss")
     parser.add_argument("--epochs_num", type=int, default=50,
                         help="Maximum number of epochs to train for")
-    parser.add_argument("--patience", type=int, default=2)
+    parser.add_argument("--patience", type=int, default=3)
     parser.add_argument("--lr", type=float, default=0.00001, help="Learning rate")
     parser.add_argument("--cache_refresh_rate", type=int, default=1000,
                         help="How often to refresh cache, in number of queries")

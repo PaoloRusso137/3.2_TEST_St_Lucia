@@ -31,7 +31,7 @@ logging.info(f"Using {torch.cuda.device_count()} GPUs and {multiprocessing.cpu_c
 #### Creation of Datasets
 logging.debug(f"Loading dataset Pitts30k from folder {args.datasets_folder}")
 
-triplets_ds = datasets_ws.TripletsDataset(args, args.datasets_folder, "pitts30k", "train", args.negs_num_per_query)
+triplets_ds = datasets_ws.TripletsDataset(args, args.datasets_folder, "st.lucia", "train", args.negs_num_per_query)
 logging.info(f"Train query set: {triplets_ds}")
 
 val_ds = datasets_ws.BaseDataset(args, args.datasets_folder, "pitts30k", "val")
